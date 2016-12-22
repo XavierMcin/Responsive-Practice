@@ -1,68 +1,36 @@
-@media(max-width: 1440px) {
-
-	img {
-		margin-top: 30px;
-		margin-left: 30px;
-		width: 500px;
-		height: auto;
-	}
-
-	.container-fluid img + div {
-		width: 500px;
-		margin-left: 30px;
-		display: inline-block;
-		font-size: 18px;
-		position: relative;
-		top: 150px;
-	}
-} 
-
-@media(max-width: 1024px) {
-	img {
-		margin-top: 30px;
-		margin-left: 10px;
-		width:350px;
-		height: auto;
-	}
-
-	.container-fluid img + div {
-		width: 580px;
-		margin-left: 10px;
-		display: inline-block;
-		font-size: 18px;
-		position: relative;
-		top: 105px;
-	}
-}
-
-@media (max-width: 768px) {
-	img {
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 300px;
-		height: auto;
-	}
-
-	.container-fluid img + div {
-		width: 380px;
-		margin-left: 20px;
-		display: inline-block;
-		font-size: 12px;
-		position: relative;
-		top: 0px;
-	}
-}
 
 img {
 	margin-top: 30px;
 	margin-left: 30px;
+	max-width: 50%;
 }
 
-img + div {
+section div:first-of-type div {
 	width: 800px;
+	max-width: 50%;
+	margin-top: 200px;
 	margin-left: 30px;
 	display: inline-block;
 	font-size: 25px;
-	position: relative;
-	top: 150px;
+	position: absolute;
+}
+
+section div:nth-child(2) div {
+	width: 800px;
+	max-width: 50%;
+	margin-top: 200px;
+	margin-left: 30px;
+	display: inline-block;
+	font-size: 25px;
+	position: absolute;
+}
+
+section div:nth-child(3) div {
+	width: 800px;
+	max-width: 50%;
+	margin-top: 200px;
+	margin-left: 30px;
+	display: inline-block;
+	font-size: 25px;
+	position: absolute;
 }
